@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <div class="loader" style="width: 0px; position: fixed; z-index: 100;"></div>
+    <div class="navMain">
+        <div class="logo">
+            <img src="gyb_logo.png" alt="#">
+        </div>
+        <div class="nav">
+            <div class="navbar">
+                <div class="navItem activeTab"><a href="index.html">Home</a></div>
+                <div class="navItem"><a href="index.html">Events</a></div>
+                <div class="navItem"><a href="#">About us</a></div>
+                <div class="navItem">
+                    Club Officials
+                    <div class="select">
+                        <a href="pi.html"><div class="selectItem">PI Page</div></a>
+                        <a href="founder.html"><div class="selectItem">Founders' page</div></a>
+                        <a href="senior.html"><div class="selectItem">Team 24'</div></a>
+                    </div>
+                </div>
+                <div class="navItem"><a href="index.html">Contact Us</a></div>
+                <div class="navItem donate"><a href="https://rzp.io/l/donategyb">Donate Us</a></div>
+            </div>
+
+            
+        </div>
+
+        <div class="hamburg">
+            <input type="checkbox" name="sidebar" id="sidebar" style="display: none;">
+            <label for="sidebar"><i class="fa fa-bars" aria-hidden="true" style="color: white;"></i></label>
+            <div class="sideNav" style="display: none;">
+                <a href="index.html"><div class="sideItem">Home</div></a>
+                <a href="index.html"><div class="sideItem">Events</div></a>
+                <a href="#"><div class="sideItem">About Us</div></a>
+                
+                <a href="pi.html"><div class="sideItem">PI Page</div></a>
+                <a href="founder.html"><div class="sideItem ">Founders' Page</div></a>
+                <a href="senior.html"><div class="sideItem">Seniors' Page</div></a>
+                <a href="index.html"><div class="sideItem">Contact Us</div></a>
+                <a href="https://rzp.io/l/donategyb"><div class="sideItem" style="background-color: rgb(47, 189, 47); color: rgb(255, 255, 255); border-radius: 10px;">Donate Us</div></a>
+            </div>
+        </div>
+    </div>  
+
+    <div class="heading">
+        <span style="color: rgb(255, 206, 51);">G</span><span>et </span>
+        <span style="color: rgb(255, 206, 51);">Y</span><span>our </span>
+        <span style="color: rgb(255, 206, 51);">B</span><span>ook </span>
+    </div>
+
+    <h3 class="subHeading">Spreading Knowledge, Sharing Joy, Serving Community</h3>
+
+    <h3 class="aboutInfo">
+        Get Your Book (GYB), established in 2017, is a vibrant social club at NIT Patna dedicated to fostering personal growth, social responsibility, and community engagement through a diverse range of activities. We believe in the power of knowledge, laughter, and collective action to make a positive impact on both the NIT Patna community and the wider society.
+    </h3>
+
+    <div class="box">
+        <h2>Our Mission</h2>
+        <div class="event">
+            <h3>Igniting Minds</h3>
+            <p>host engaging and fun events within the college, fostering interaction, promoting learning, and cultivating a vibrant campus culture.</p>
+        </div>
+        <div class="event">
+            <h3>Empowering Education</h3>
+            <p>We organize book donation drives, ensuring underprivileged children have access to essential study materials and fostering a love for learn.</p>
+        </div>
+        <div class="event">
+            <h3>Celebrating Togetherness</h3>
+            <p>We collaborate with underprivileged communities, organizing festive celebrations and creating joyful memories for children.</p>
+        </div>
+        <div class="event">
+            <h3>Serving with Compassion</h3>
+            <p>We actively participate in community service initiatives, addressing local needs and contributing to social progress.</p>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <h2>Our Guiding</h2>
+        <span>The club is led by Shiv Kumar Chauhan, Professor Incharge, and supported by a dedicated team of members. Our founding member, Ramesh Raj, continues to provide invaluable guidance and inspiration.</span>
+    </div>
+
+    <div class="box">
+        <h2>Celebrating Milestones</h2>
+        <span>Throughout the year, we organize five major events that showcase our diverse activities</span>
+        <div class="event">
+            <h3>Sahayog</h3>
+            <p>An social welfare event, celebrating Holi in slums of Patna collaborating with local NGOs.</p>
+        </div>
+        <div class="event">
+            <h3>Jyoti</h3>
+            <p>A festive celebration with underprivileged children, filled with joy, laughter, and shared experiences during Diwali.</p>
+        </div>
+        <div class="event">
+            <h3>Abhiyaanta</h3>
+            <p>A fun-filled event within the college, fostering interaction and creating lasting memories on Engineer's Day.</p>
+        </div>
+        <div class="event">
+            <h3>Utkrisht</h3>
+            <p>A platform for showcasing talents and promoting creativity within the NIT Patna community.</p>
+        </div>
+        <div class="event">
+            <h3>Blanket Donation</h3>
+            <p>A winter relief initiative providing warmth and comfort to those in need.</p>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <h2>Help Us!</h2>
+        <span>
+            We invite you to join the GYB family and contribute to our mission. Whether you're passionate about education, community service, or simply looking to connect with like-minded individuals, we have something for you. Become a part of our journey of learning, laughter, and service, and make a difference in the world around you!
+        </span>
+        <br>
+        <button><a href="https://rzp.io/l/donategyb">Donate us</a></button>
+    </div>
+
+
+    <script>
+
+let sideItems = document.querySelectorAll(".sideItem")
+        document.querySelector("input").addEventListener("change", ()=>{
+    if(document.querySelector("input").checked == true) {
+        document.querySelector(".sideNav").style.display = "block";
+    } else{
+        document.querySelector(".sideNav").style.display = "none"
+    }
+})
+
+for(let i = 0; i<sideItems.length; i++) {
+    sideItems[i].addEventListener("click", ()=>{
+        document.querySelector(".sideNav").style.display = "none";
+        if(document.querySelector("input").checked == false) {
+            document.querySelector("input").checked = true;
+        } else{
+            document.querySelector("input").checked = false;
+        }
+    })
+}
+
+window.addEventListener("scroll", ()=>{
+    // console.log(window.scrollY);
+
+    // console.log("load")
+    let wid = (window.scrollY/ (document.body.offsetHeight - window.innerHeight)
+    )*100
+    document.querySelector(".loader").style.width = `${wid}%`;
+})
+
+    </script>
+    <script src="https://kit.fontawesome.com/b51a57a65a.js" crossorigin="anonymous"></script>
+</body>
+</html>

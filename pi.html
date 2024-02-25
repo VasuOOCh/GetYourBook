@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pi.css">
+</head>
+<body>
+
+    <div class="navMain">
+        <div class="logo">
+            <img src="gyb_logo.png" alt="#">
+        </div>
+        <div class="nav">
+            <div class="navImg">
+                <img src="navImg.png" alt="">
+            </div>
+            <div class="navbar">
+                <div class="navItem"><a href="index.html">Home</a></div>
+                <div class="navItem"><a href="index.html">Events</a></div>
+                <div class="navItem"><a href="about.html">About us</a></div>
+                <div class="navItem">
+                    Club Officials
+                    <div class="select">
+                        <a href="pi.html"><div class="selectItem">PI Page</div></a>
+                        <a href="founder.html"><div class="selectItem">Founders' page</div></a>
+                        <a href="senior.html"><div class="selectItem">Team 24'</div></a>
+                    </div>
+                </div>
+                <div class="navItem"><a href="index.html">Contact Us</a></div>
+                <div class="navItem donate"><a href="https://rzp.io/l/donategyb">Donate Us</a></div>
+            </div>
+
+            
+        </div>
+
+        <div class="hamburg">
+            <input type="checkbox" name="sidebar" id="sidebar" style="display: none;">
+            <label for="sidebar"><i class="fa fa-bars" aria-hidden="true" style="color: white;"></i></label>
+            <div class="sideNav" style="display: none;">
+                <a href="index.html"><div class="sideItem">Home</div></a>
+                <a href="index.html"><div class="sideItem">Events</div></a>
+                <a href="about.html"><div class="sideItem">About Us</div></a>
+                
+                <a href="pi.html"><div class="sideItem">PI Page</div></a>
+                <a href="founder.html"><div class="sideItem ">Founders' Page</div></a>
+                <a href="senior.html"><div class="sideItem">Seniors' Page</div></a>
+                <a href="index.html"><div class="sideItem">Contact Us</div></a>
+                <a href="https://rzp.io/l/donategyb"><div class="sideItem" style="background-color: rgb(47, 189, 47); color: rgb(255, 255, 255); border-radius: 10px;">Donate Us</div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">  
+        <div class="card">
+            <div class="imm">
+                <img src="seniorimage\Professor Incharge.jpg"/>
+            </div>
+        <div class="text">
+                <h1>Dr. Shiv Shankar Kumar</h1>
+            </div>
+        </div>
+        <div class="para">
+           <p> Meet Dr.Shiv Shankar Kumar: The PI of GYB Club</p><br>
+
+            Dr. Shiv Shankar Kumar, a dedicated educator from NIT Patna, serves as the guiding force behind GYB Club's mission.
+             With a passion for community empowerment, Dr. Kumar leads the club in celebrating festivals with underprivileged
+              children, organizing book collection drives, and hosting inclusive fun events. His strategic leadership, mentorship,
+               and commitment to social impact drive the club's efforts to create positive change and brighter futures for all.
+        </div>
+
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/b51a57a65a.js" crossorigin="anonymous"></script>
+
+    <script>
+
+let sideItems = document.querySelectorAll(".sideItem")
+        document.querySelector("input").addEventListener("change", ()=>{
+    if(document.querySelector("input").checked == true) {
+        document.querySelector(".sideNav").style.display = "block";
+    } else{
+        document.querySelector(".sideNav").style.display = "none"
+    }
+})
+
+for(let i = 0; i<sideItems.length; i++) {
+    sideItems[i].addEventListener("click", ()=>{
+        document.querySelector(".sideNav").style.display = "none";
+        if(document.querySelector("input").checked == false) {
+            document.querySelector("input").checked = true;
+        } else{
+            document.querySelector("input").checked = false;
+        }
+    })
+}
+
+
+    </script>
+</body>
+</html>
