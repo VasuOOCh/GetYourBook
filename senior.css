@@ -141,6 +141,7 @@ a{
     flex-direction: column;
     gap: 2vh;
     padding: 5%;
+    padding-top: 20%;
 }
 .cont .text{
     width:85%;
@@ -374,6 +375,7 @@ background: linear-gradient(to left, #FF0000 0%, #000000 100%);
     }
     .cont{
         height: 580vh;
+        padding-top: 25%;
     }
     .cont .text{
         font-size: 3.3rem;

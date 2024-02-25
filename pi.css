@@ -336,6 +336,7 @@ background: linear-gradient(to right, #34F1E9 9%, #FF281A 91%);
     }
     .container{
         height: 100vh;
+        padding-top: 25%;
     }
     .para{
         width:70vw;
