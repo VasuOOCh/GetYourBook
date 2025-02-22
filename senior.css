@@ -585,3 +585,38 @@ background: linear-gradient(to left, #FF0000 0%, #000000 100%);
         font-size: 1.3rem;
     }
 } */
+
+/* CSS for card container */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* CSS for individual cards */
+.card1 {
+    flex: 1 1 200px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* CSS for images within cards */
+.card1 .image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* CSS for text elements */
+.ha, .harshit {
+    margin: 10px 0;
+}
+
+
